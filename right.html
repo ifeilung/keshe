@@ -17,7 +17,7 @@ body {
 }
 .yangshi04 {
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 18px;
 	color: #90C;
 }
 .yangshi05 {
@@ -31,11 +31,18 @@ body {
 	font-size: 24px;
 	color: #90F;
 }
+.yangshi07 {
+	font-weight: bold;
+	color: #F00;
+}
+.yangshi08 {
+	font-size: 24px;
+}
 </style>
 </head>
 
 <body>
-<p class="yangshi02">关于该课题的说明</p>
+<p class="yangshi02">关于该课题的说明以及分析数据的MATLAB代码</p>
 <p>当今手机行业，可谓百家争鸣，各大企业大放异彩。在这风云变幻的手机行业，背后有着怎样的发展规律呢?通过分析大数据，我们可以得到一些结论。尽管由于各种原因，我们的分析结果未必尽然合理，但可以作为参考，让我们客观的了解手机行业的发展情况以及其发展趋势。</p>
 <p>在分析的过程中，有一些假设的条件，而结论的得出，是建立在假设之上的。我们排除某些例如重大技术变革等特殊的情况，然后，根据分析数据的结果去做一些预测。</p>
 <p class="yangshi04">一、数学模型为:</p>
@@ -55,8 +62,10 @@ body {
 <p class="yangshi04"><img src="img/qushi.png" width="559" height="352" /></p>
 <p>由图可见，三次拟合结果较好。因此，我们采用三次多项式拟合。</p>
 <p class="yangshi05">在分析中，我们假设手机配置的升级过程和手机价格的变化过程是有一定规律的，因此，用三次多项式拟合后，可以做出接近其变化规律的曲线，将曲线往后延伸，便可以对未来的发展趋势做出相应的预测。</p>
+<p class="yangshi04"><span class="yangshi08">二、分析数据的MATLAB代码</span></p>
+<p class="yangshi04"><span class="yangshi07">画折线图以及做三次多项式拟合的代码如下：</span></p>
 <p class="yangshi04">&nbsp;</p>
-<p class="yangshi05"><span class="yangshi06">二、做预测时的假设条件为:</span></p>
+<p class="yangshi05"><span class="yangshi06">三、做预测时的假设条件为:</span></p>
 <p class="yangshi05">1.手机的配置升级和更新换代是有一定规律的；</p>
 <p class="yangshi05">2.手机行业没有什么重大事件，导致该行业发生很大的波动；</p>
 <p class="yangshi05">3.集成电路芯片已经内存的发展仍然遵循摩尔定律，科学技术领域还没有特殊的重大突破情况。</p>
