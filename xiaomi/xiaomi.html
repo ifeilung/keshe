@@ -75,8 +75,8 @@ body {
 	color: #F00;
 }
 .yangshi0010 {
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 18px;
+	color: #000;
 }
 .yangshi0011 {
 	font-size: 18px;
@@ -125,6 +125,12 @@ a:active {
 	font-weight: bold;
 	color: #00F;
 }
+an {
+	font-size: 18px;
+}
+an {
+	font-size: 18px;
+}
 </style>
 </head>
 
@@ -152,12 +158,12 @@ a:active {
     <td><a href="#PPI">PPI</a></td>
     <td><a href="#SXT">主摄像头像素</a></td>
     <td><a href="#CPU">CPU核心数</a></td>
-    <td>前置摄像头</td>
-    <td>CPU频率</td>
-    <td>屏占比</td>
-    <td>厚度</td>
-    <td>电池容量</td>
-    <td>窄边框</td>
+    <td><a href="#qianzhi">前置摄像头</a></td>
+    <td><a href="#CPUpinlv">CPU频率</a></td>
+    <td><a href="#PZB">屏占比</a></td>
+    <td><a href="#HD">厚度</a></td>
+    <td><a href="#DCRL">电池容量</a></td>
+    <td><a href="#ZBK">窄边框</a></td>
     <td class="yangshi0001"><a href="../right.html" target="_self">返回</a></td>
   </tr>
 </table>
@@ -362,7 +368,62 @@ a:active {
 <p>&nbsp;</p>
 <p><span class="yangshi0010">结论：</span></p>
 <p>可以看到，手机CPU核心数的增长方式和摄像头像素的增长方式相似，都是呈阶梯状增长的，每一次跳跃性增长后会保持一个值数年。然后接着跳跃性增长（翻一番）。</p>
+<p><span class="xiaomiy"><a name="qianzhi" id="qianzhi"></a>7.小米各代手机前置摄像头变化趋势图</span></p>
+<p class="yangshi001">matlab数据处理结果如下：</p>
+<p class="yangshi001">折线图：</p>
+<p class="yangshi001"><img src="ZxiaomiQianzhi.PNG" width="444" height="431" /></p>
+<p><span class="yangshi002">拟合曲线如下：</span></p>
+<p><img src="NxiaomiQianzhi.PNG" width="436" height="415" /></p>
+<p><span class="yangshi0010">结论：</span></p>
+<p>前置摄像头的变化趋势与后置摄像头相似，都是阶梯状上上的。每隔几代便有一次向上的跃迁。</p>
 <p>&nbsp;</p>
+<p><span class="xiaomiy"><a name="CPUpinlv" id="CPUpinlv"></a>8.小米各代手机CPU频率变化趋势图</span></p>
+<p class="yangshi001">matlab数据处理结果如下：</p>
+<p class="yangshi001">折线图：</p>
+<p class="yangshi001"><img src="ZxiaomiZHUpin.PNG" width="395" height="372" /></p>
+<p><span class="yangshi002">拟合曲线如下：</span></p>
+<p><img src="NxiaomiZHU.PNG" width="403" height="378" /></p>
+<p>&nbsp;</p>
+<p><span class="yangshi0010">结论：</span></p>
+<p>根据二次拟合曲线，CPU主频在不断增加，但会趋于极限。</p>
+<p>&nbsp;</p>
+<p><span class="xiaomiy"><a name="PZB" id="PZB"></a>9.小米各代手机屏占比变化趋势图</span></p>
+<p class="yangshi001">matlab数据处理结果如下：</p>
+<p class="yangshi001">折线图：</p>
+<p class="yangshi001"><img src="ZxiaomiPINGzhanbi.PNG" width="406" height="369" /></p>
+<p><span class="yangshi002">拟合曲线如下：</span></p>
+<p><img src="NxiaomiPINGzhanbi.PNG" width="407" height="371" /></p>
+<p>&nbsp;</p>
+<p><span class="yangshi0010">结论：</span></p>
+<p>手机屏占比的变化也与二次拟合曲线吻合，先增加，然后趋于稳定的极限值。</p>
+<p>&nbsp;</p>
+<p><span class="xiaomiy"><a name="HD" id="HD"></a>10.小米各代手机厚度变化趋势图</span></p>
+<p class="yangshi001">matlab数据处理结果如下：</p>
+<p class="yangshi001">折线图：</p>
+<p class="yangshi001"><img src="ZxiaomiHoudu.PNG" width="397" height="364" /></p>
+<p><span class="yangshi002">拟合曲线如下：</span></p>
+<p><img src="NxiaomiHoudu.PNG" width="386" height="360" /></p>
+<p>&nbsp;</p>
+<p><span class="yangshi0010">结论：</span></p>
+<p>厚度的变化过程是逐渐减小，然后在某一很小的值附近徘徊。再继续突破厚度极限，需要有技术革新。</p>
+<p>&nbsp;</p>
+<p><span class="xiaomiy"><a name="DCRL" id="DCRL"></a>11.小米各代手机电池容量变化趋势图</span></p>
+<p class="yangshi001">matlab数据处理结果如下：</p>
+<p class="yangshi001">折线图：</p>
+<p class="yangshi001"><img src="ZxiaomiDianchi.PNG" width="386" height="360" /></p>
+<p class="yangshi001"><span class="yangshi002">拟合曲线如下：</span></p>
+<p class="yangshi001"><img src="NxiaomiDianchi.PNG" width="392" height="362" /></p>
+<p class="yangshi001"><span class="yangshi0010">结论： </span></p>
+<p class="yangshi001"><span class="yangshi0010">根据二次拟合曲线，可以看出电池容量增加的规律，在未来的几代手机中，电池容量可能还会有所增加，但由于手机大小的限制，电池容量不可能无限增加，所以，最终应该电池容量的增加速度将会逐渐减慢，知道有重大的技术革新。</span></p>
+<p class="yangshi001">&nbsp;</p>
+<p><span class="xiaomiy"><a name="ZBK" id="ZBK"></a>12.小米各代手机窄边框变化趋势图</span></p>
+<p class="yangshi001">matlab数据处理结果如下：</p>
+<p class="yangshi001">折线图：</p>
+<p class="yangshi001"><img src="ZxiaomiBiankuang.PNG" width="378" height="345" /></p>
+<p class="yangshi001"><span class="yangshi002">拟合曲线如下：</span></p>
+<p class="yangshi001"><img src="NxiaomiBiankuang.PNG" width="376" height="342" /></p>
+<p class="yangshi001">结论：</p>
+<p class="yangshi001"><span class="YY01"><span class="YY02"><span class="yangshi0011"><span class="biao01"><span class="wen"><span class="Y"><span class="yangshi03">边框的变化趋势是不断变窄，逐渐向无边框发展。</span></span></span></span></span></span></span></p>
 <p class="yangshi0013">综述：</p>
 <p class="yangshi0013"><span class="yangshi0011"><span class="yangshi001">小米手机大多数配置都在不断升级中，而升级的规律却不尽相同，同时，每种配置的升级的过程都有先快后慢的规律，有的升级到一定程度后升级速度变慢，有的甚至停止增长。</span></span></p>
 </body>
