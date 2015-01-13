@@ -85,7 +85,10 @@ body {
 <p class="yangshi04"><span class="yangshi12">draw.m</span></p>
 <p class="yangshi04">%输入统计数据，画出折线图、一次拟合曲线、三次拟合曲线,多项式拟合代码<br />
   <span class="yangshi11">x=input('请输入x坐标轴向量,形式为[a b c]:')<br />
-  y=input('请输入y坐标轴向量,形式为[a b c]:')<br />
+y=input('请输入y坐标轴向量,形式为[a b c]:')<br />
+  </span><span class="yangshi11">plot(x,y)<br />
+  title('折线图');<br />
+  pause;<br />
   len=length(x)<br />
   p1 = polyfit(x,y,1)<br />
   p2 = polyfit(x,y,2)<br />
