@@ -8,6 +8,7 @@ body {
 	background-color: #FFF;
 	margin-left: 30px;
 	margin-top: 30px;
+	font-size: 16px;
 }
 .summary {
 	text-align: center;
@@ -20,13 +21,45 @@ body {
 	color: #30F;
 	font-family: "Comic Sans MS", cursive;
 }
+.sum {
+	color: #309;
+	font-weight: bold;
+}
 </style>
 </head>
 
 <body>
-<p class="summary">综合分析与趋势预测</p>
-<p>由以上分析可以看出，各个品牌手机发展趋势相近，下面是各个常见品牌的未来两代产品的基本配置的预测。</p>
-<p>1. 三星 galaxy S 系列</p>
+<p class="summary">各品牌手机的综合分析与趋势预测</p>
+<p align="left">通过MATLAB工具对数据进行的拟合及预测，综合三星、iphone、HTC、魅族、华为、小米各品牌手机参数具体分析，发现未来手机性能将变得更加强大，并且更加舒适。 </p>
+<p align="left"><span class="sum">一、手机CPU</span><br />
+  <br />
+  手机技术的发展最重要的一项是手机CPU的发展从最初的单核500MHZ到现如今旗舰机型的4核2.5GHZ ，以及联发科的8核1.7GHZ，手机CPU的发展速度通过MATLAB拟合曲线反应为一条加速度越来越大的曲线，频率变得越来越高，核心数也呈指数倍增长，CPU的位数也由原来的32位提高到现在的64位。拟合结果显示未来手机在核心数、频率及位数上还将进一步提升，随之而来的跑分表现会更好。</p>
+<p align="left"><span class="sum">二、手机RAM</span><br />
+  <br />
+安卓手机的运行内存从最初第一代手机产品的256M提升到现在的3G，在拟合曲线上也普遍表现为加速度越来越大的上升曲线，拟合结果显示出未来的手机RAM将继续变大，下一、二代手机将朝着4G、5G迈步发展。苹果手机提升则不很明显，从256M提升到了1G，提升比安卓手机慢。由拟合结果预测的下一、二代苹果手机的RAM为1G、2G。</p>
+<p align="left"> <br />
+  <span class="sum">三、存储空间ROM</span><br />
+  <br />
+  手机的ROM由最初的4G逐步发展到8G、16G越来越大，在MATLAB拟合曲线上表现为加速度越来越大的上升曲线，呈现出指数倍增长，未来手机的ROM会进一步变大。<br />
+  <br />
+  <span class="sum">四、屏幕尺寸 </span><br />
+  <br />
+  手机屏幕尺寸的变化在几个品牌手机中都呈现出变大的趋势，但又不尽相同。由MATLAB仿真实验可以看出，三星S系列手机下一、二代的屏幕将稳定在5.2寸左右，三星note系列手机屏幕尺寸将稳定在5.7寸左右，苹果主流旗舰标配屏幕尺寸将稳定在4.7寸左右，HTC、魅族、华为旗舰手机屏幕则会继续增大。 <br />
+  <br />
+  <span class="sum">五、手机电池</span><br />
+  <br />
+  手机电池容量的变化去趋势在几个品牌手机中都呈现出上升趋势，安卓手机从最初的大于1000mAh，变为现在的3000mAh，苹果iphone手机容量较小，但也从第一代产品的1140mah提升到了2915mAh，拟合结果显示将持续增大。一方面手机的屏幕尺寸在越做越大，另一方面手机的配置越来越高，需要消耗更多的电量，这就要求各品牌手机公司必须推出电池容量更大的手机以满足耗电如漏电的恐怖耗电需求。但是如今安卓手机中即使是3000多毫安的手机仍然不够用，和iphone相比，安卓手机需要进一步优化系统，降低处理器的功耗。 <br />
+  <br />
+  <span class="sum">六、屏幕PPI</span><br />
+  <br />
+  手机屏幕PPI的变化在各个品牌主流旗舰系列中均表现为上升趋势。手机PPI由100多PPI提升到了400、500多。在苹果推出视网膜屏312PPI的标杆之后，手机屏幕的PPI却没有因此而止步，仍然呈现出大踏步向上提升，GALAXY S5达到了432PPI，GALAXY Note Edge达到了525PPI，而苹果自家手机iPhone6 Plus则为401PPI。MATLAB的拟合结果说明未来手机的PPI将会继续增大。 </p>
+<p align="left"><span class="sum">七、手机厚度与窄边框及屏占比</span><br />
+  <br />
+  从各品牌手机的手机厚度和边框宽度数据拟合曲线综合来看，均呈现出下降趋势，即厚度越来越薄，边框越来越窄，随之而来的则是手机的握感越来越舒适，同时屏占比将越来越大，美感越来越好。而屏幕越大，相对的其屏占比也越大。预测未来各品牌的主流旗舰手机的厚度、边框都将进一步的下降，屏占比进一步提升。 <br />
+  总结：综合以上分析，可以得知未来手机会朝着性能更强（CPU核心数更多，主频数更高，位数更多），屏幕更大，边框更窄，厚度愈薄，屏占比更高的方向发展。 <br />
+</p>
+<p align="left" class="sum">下面是各个品牌手机的预测：</p>
+<p class="sum">1. 三星 galaxy S 系列</p>
 <table width="98%" border="1" cellspacing="0">
   <tr>
     <td>未来两代</td>
@@ -74,7 +107,7 @@ body {
     <td>3.0</td>
   </tr>
 </table>
-<p>.2. 三星 galaxy note 系列</p>
+<p class="sum">.2. 三星 galaxy note 系列</p>
 <table width="98%" border="1" cellspacing="0">
   <tr>
     <td>未来两代</td>
@@ -122,7 +155,7 @@ body {
     <td>2.5</td>
   </tr>
 </table>
-<p>3. iPhone 系列</p>
+<p class="sum">3. iPhone 系列</p>
 <table width="98%" border="1" cellspacing="0">
   <tr>
     <td>未来两代</td>
@@ -170,7 +203,7 @@ body {
     <td>&nbsp;</td>
   </tr>
 </table>
-<p>4. HTC系列</p>
+<p class="sum">4. HTC系列</p>
 <table width="98%" border="1" cellspacing="0">
   <tr>
     <td>未来两代</td>
@@ -218,7 +251,7 @@ body {
     <td align="right">3.5</td>
   </tr>
 </table>
-<p>5. 魅族 MX 系列</p>
+<p class="sum">5. 魅族 MX 系列</p>
 <table width="98%" border="1" cellspacing="0">
   <tr>
     <td>未来两代</td>
@@ -266,7 +299,7 @@ body {
     <td align="right">2.4</td>
   </tr>
 </table>
-<p>6. 华为手机荣耀系列</p>
+<p class="sum">6. 华为手机荣耀系列</p>
 <table width="98%" border="1" cellspacing="0">
   <tr>
     <td>未来两代</td>
